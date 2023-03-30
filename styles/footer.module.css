@@ -1,0 +1,131 @@
+.footer {
+  /* min-height: 70vh; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 6rem 8rem;
+  /* padding-bottom: 15em; */
+  background: var(--light);
+  /* border-top: 20px solid var(--light); */
+  /* border-style:ridge; */
+}
+
+.heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+
+.p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.banner {
+  background: var(--dark);
+  height: 5em;
+  border-radius: 20px;
+}
+
+.navigation {
+  display: flex;
+  gap: 3em;
+  padding: 0;
+}
+
+.navigation > ul {
+  list-style: none;
+  padding: 0;
+  /* margin:  2em auto; */
+}
+
+.right {
+  margin: auto;
+  margin-right: 0;
+  /* margin-top: 0; */
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  height: 100%;
+}
+
+.newsletterholder {
+  margin: auto;
+}
+
+.socials {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin: auto;
+}
+
+.link {
+  color: black;
+}
+
+.form {
+  margin: 0;
+  display: inline-flex;
+}
+.input {
+  font-size: 18px;
+  font-family: "Roboto Mono", monospace;
+  padding: 0.5em;
+}
+.btn {
+  font-size: 18px;
+  font-family: "Roboto Mono", monospace;
+  border: none;
+  background: #000;
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+  }
+
+  .navigation {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .heading {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    /* padding-bottom: 1rem; */
+    margin: 0;
+  }
+
+  .p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .form {
+    display: inline-flex;
+    padding: 1em;
+  }
+  .input {
+    font-size: 18px;
+    font-family: "Roboto Mono", monospace;
+    /* padding: 0.5em; */
+    width: 80%;
+  }
+  .btn {
+    font-size: 18px;
+    font-family: "Roboto Mono", monospace;
+    border: none;
+    background: #000;
+    color: white;
+    width: 40%;
+  }
+}

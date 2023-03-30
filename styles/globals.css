@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap");
+
+body {
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
+  background: var(--dark);
+}
+
+:root {
+  --dark: #222428;
+  --text-light: #ffffff;
+  --text-dark: #313233;
+  --light: #f4f9fd;
+  /* --light: #c5d1dc; */
+  --hot-pink: #4787d5;
+  --heavy-blue:#164995;
+  --mock-blue: #e5eef9;
+  --mid-blue: #323646;
+  --text-pos: relative;
+  --home-padding: 8rem 10rem 10rem 10rem;
+}
+/* .gridlines{
+  display: grid;
+  grid-template-columns:repeat(12,1fr);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  pointer-events: none;
+}
+
+.lines{
+  height: 100vh;
+  border-left: solid 1px rgba(128, 128, 128, 0.3);
+  
+} */

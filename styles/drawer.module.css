@@ -1,0 +1,56 @@
+.drawer {
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  background: var(--dark);
+  display: flex;
+  flex-direction: column;
+  font-size: 60px;
+  align-items: center;
+}
+
+.drawer > ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  /* align-items: flex-start; */
+  /* justify-content: space-evenly; */
+  height: 100%;
+  font-size: 46px;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fade-in-up 0.5s ease-out forwards;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px); /* start from a position down 50px */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* move to the original position */
+  }
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: var(--text-light);
+}

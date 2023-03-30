@@ -1,0 +1,18 @@
+.buttonprimary {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  /* border: 1px solid black; */
+  font-weight: 400;
+  font-size: 20px;
+  background: var(--hot-pink);
+  /* color: var(--text-light); */
+  color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  border: none;
+  text-align: center;
+}
+
+.buttonprimary:hover{
+
+}

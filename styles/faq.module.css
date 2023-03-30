@@ -1,0 +1,53 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+  /* background: var(--light); */
+  padding: 4rem 8rem;
+  /* margin: 1em; */
+  gap: 1em;
+  /* box-sizing: border-box; */
+  /* max-width: min-content; */
+}
+
+.heading{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  /* color: var(--text-light); */
+  /* padding: 5rem 0rem; */
+  margin: 0;
+}
+
+
+.accordion {
+  background: var(--light);
+  /* width: 100%; */
+  padding: 1em;
+  border: 1px solid var(--dark);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.accordionItem {
+  border-bottom: 1px solid var(--dark);
+}
+
+.accordionHeader {
+  background-color: #f2f2f2;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordionContent {
+  padding: 1em;
+}
+
+.accordionItem.active .accordionHeader {
+  background-color: #ddd;
+}
+
+@media only screen and (max-width: 767px) {
+  .faq{
+    padding: 2rem 2rem;
+  }
+}
